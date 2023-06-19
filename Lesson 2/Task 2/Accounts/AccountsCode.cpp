@@ -10,10 +10,9 @@ struct Accounts
 	double balance;
 };
 
-double Change_Balance_Func(Accounts Client, int new_balance)
+void Change_Balance_Func(struct Accounts& Client, double new_balance)
 {
 	Client.balance = new_balance;
-	return Client.balance;
 }
 
 int main(int argc, char** argv)
