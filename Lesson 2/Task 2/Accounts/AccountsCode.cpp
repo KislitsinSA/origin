@@ -17,6 +17,7 @@ void Change_Balance_Func(struct Accounts& Client, double new_balance)
 
 int main(int argc, char** argv)
 {
+	setlocale(LC_ALL, "Russian");
 	system("chcp 1251 > nul");
 	auto new_balance{ 0 };
 
