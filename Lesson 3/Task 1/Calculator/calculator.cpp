@@ -48,8 +48,8 @@ class Calculator
 		{
 			if (!num1)
 			{
-				cout << "Íåâåðíûé ââîä!" << "\n";
-				cout << "Ââåäèòå num1 : ";
+				cout << "ÃÃ¥Ã¢Ã¥Ã°Ã­Ã»Ã© Ã¢Ã¢Ã®Ã¤!" << "\n";
+				cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ num1 : ";
 				cin >> num1;
 				cout << "\n";
 			}
@@ -61,8 +61,8 @@ class Calculator
 		{
 			if (!num2)
 			{
-				cout << "Íåâåðíûé ââîä!" << "\n";
-				cout << "Ââåäèòå num2 : ";
+				cout << "ÃÃ¥Ã¢Ã¥Ã°Ã­Ã»Ã© Ã¢Ã¢Ã®Ã¤!" << "\n";
+				cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ num2 : ";
 				cin >> num2;
 				cout << "\n";
 			}
@@ -80,12 +80,12 @@ int main()
 	
 	do
 	{
-		cout << "Ââåäèòå num1 : ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ num1 :  ";
 		cin >> num1;
 		cout << "\n";
 		result = operations.set_num1(num1);
 
-		cout << "Ââåäèòå num2 : ";
+		cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ num2 : ";
 		cin >> num2;
 		cout << "\n";
 		result = operations.set_num2(num2);
