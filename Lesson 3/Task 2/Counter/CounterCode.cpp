@@ -16,7 +16,8 @@ public:
     int close_prog() { std::cout << "До свидания! \n"; return 0;}
 };
 
-int main() {
+int main(int argc, char** argv) 
+{
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
