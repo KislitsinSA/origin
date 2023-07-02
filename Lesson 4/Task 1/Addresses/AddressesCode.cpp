@@ -1,0 +1,83 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+class addresses
+{
+private:
+
+    string city;
+    string street;
+    int houseNumber = 0;
+    int flatNumber = 0;
+
+public:
+    string output_address;
+
+    addresses(string cityConstr, string streetConstr, int houseNumberConstr, int flatNumberConstr)
+    {
+        string city = cityConstr;
+        string street = streetConstr;
+        int houseNumber = houseNumberConstr;
+        int flatNumber = flatNumberConstr;
+    }
+
+    // метод объединения полей в строку адреса
+    string get_output_address(string city, string street, int houseNumber, int flatNumber)
+    {
+        string output_address = city + ", " + street + ", " + to_string(houseNumber) + ", " + to_string(flatNumber) + "\n";
+        return output_address;
+    }
+};
+
+////////////////////////////////////////////////
+int main() {
+
+    auto numberOfAddresses{ 0 };
+    string cityConstr;
+    string streetConstr;
+    int houseNumberConstr = 0;
+    int flatNumberConstr = 0;
+
+    ifstream fileIn("in.txt");
+
+    if (!fileIn.is_open())
+    {
+        cout << "Файл не открыт или не найден";
+        return 0;
+    }
+    fileIn >> numberOfAddresses; // запись в переменную кол-ва адресов, указанных в файле in.txt
+
+    // Создание динамического массива и наполнение его адресами
+    string* AddArr;
+    AddArr = new string[numberOfAddresses];
+
+    for (int i = 0; i <= numberOfAddresses - 1; i++)
+    {
+        fileIn >> cityConstr >> streetConstr >> houseNumberConstr >> flatNumberConstr;
+        addresses addresses(cityConstr, streetConstr, houseNumberConstr, flatNumberConstr);
+        AddArr[i] = addresses.get_output_address(cityConstr, streetConstr, houseNumberConstr, flatNumberConstr);
+    };
+
+    // печать адресов в файл out.txt в обратном порядке
+    ofstream fileOut("out.txt");
+    if (!fileOut.is_open())
+    {
+        cout << "Файл не открыт или не найден";
+        return 0;
+    }
+    fileOut << numberOfAddresses << "\n";
+    for (int i = numberOfAddresses - 1; i >= 0; i--)
+    {
+        fileOut << AddArr[i];
+    }
+
+    fileIn.close();
+    fileOut.close();
+    delete[] AddArr;
+    AddArr = nullptr;
+
+    return 0;
+}
