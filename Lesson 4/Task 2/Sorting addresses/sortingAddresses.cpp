@@ -66,9 +66,9 @@ int main() {
     };
    
     // сортировка адресов в массиве по алфавиту
-    for (int i = 0; i < numberOfAddresses; i++)
+    for (int i = 0; i < numberOfAddresses - i; i++)
     {
-        for (int j = 0; j < numberOfAddresses - 1; i++)
+        for (int j = 0; j < numberOfAddresses - 1 - i; j++)
         {
             if (AddArr[j] > AddArr[j + 1])
             {
