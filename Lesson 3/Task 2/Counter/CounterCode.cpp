@@ -1,28 +1,34 @@
 #include <iostream>
 #include <string>
 #include<Windows.h>
+ 
+
 
 class Counter
 {
 private:
-    int count = 1;
+    int count{ 1 }; 
 
 public:
 
-    void user_count() { std::cin >> count;}
+    Counter() {}
+
+    Counter(int i): count(i) {}
+
     void add_count() { count += 1; std::cout << count << "\n";}
     void min_count() { count -= 1; std::cout << count << "\n";}
     void print_count() { std::cout << count << "\n"; }
     int close_prog() { std::cout << "До свидания! \n"; return 0;}
 };
 
-int main(int argc, char** argv) 
+int main() 
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
     std::string user_choice;
     char operation;
+    int count{ 1 };
 
     Counter counter;
 
@@ -32,13 +38,14 @@ int main(int argc, char** argv)
     if (user_choice == "да")
     {
         std::cout << "Введите начальное значение счётчика: ";
-        counter.user_count();
+        std::cin >> count;
+        Counter user { count };
         std::cout << "\n";
     }
 
     do
     {
-        std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
+        std::cout << "Введите команду ('+', '-', '=' или 'х'): ";
         std::cin >> operation;
 
         if (operation == '+') counter.add_count();
