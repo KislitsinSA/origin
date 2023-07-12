@@ -2,11 +2,7 @@
 #include <string>
 #include<Windows.h>
 
-<<<<<<< HEAD
 using namespace std;
-=======
-
->>>>>>> c5bfa431c558983083caa5f05bddbcf586a380f7
 
 class Counter
 {
@@ -17,7 +13,6 @@ public:
 
     Counter() {}
 
-<<<<<<< HEAD
     Counter(int i)
     {
         count = i;
@@ -26,18 +21,8 @@ public:
     void add_count() { count += 1; cout << "\n"; }
     void min_count() { count -= 1; cout << "\n"; }
     void print_count() { cout << count << "\n\n"; }
-    int close_prog() { cout << "ƒÓ Ò‚Ë‰‡ÌËˇ! \n"; return 0; }
-=======
-    Counter(int i) 
-    {
-       count = i;
-    }
+    int close_prog() { cout << "–î–æ —Å–≤–∏–¥–∞–Ω–∏—è! \n"; return 0; }
 
-    void add_count() { count += 1; std::cout << count << "\n"; }
-    void min_count() { count -= 1; std::cout << count << "\n"; }
-    void print_count() { std::cout << count << "\n"; }
-    int close_prog() { std::cout << "–î–æ —Å–≤–∏–¥–∞–Ω–∏—è! \n"; return 0; }
->>>>>>> c5bfa431c558983083caa5f05bddbcf586a380f7
 };
 
 int main()
@@ -53,33 +38,20 @@ int main()
     
 
 
-    std::cout << "¬˚ ıÓÚËÚÂ ÛÍ‡Á‡Ú¸ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜∏Ú˜ËÍ‡? ¬‚Â‰ËÚÂ ‰‡ ËÎË ÌÂÚ: \n";
+    std::cout << "–í—ã —Ö–æ—Ç–∏—Ç–µ —É–∫–∞–∑–∞—Ç—å –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞? –í–≤–µ–¥–∏—Ç–µ –¥–∞ –∏–ª–∏ –Ω–µ—Ç: \n";
     std::cin >> user_choice;
 
-    if (user_choice == "‰‡")
+    if (user_choice == "–¥–∞")
     {
-<<<<<<< HEAD
-        cout << "¬‚Â‰ËÚÂ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜∏Ú˜ËÍ‡: ";
+        cout << "–í–≤–µ–¥–∏—Ç–µ –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞: ";
         cin >> count;
         cout << "\n";
     }
     Counter user{ count };
     do
     {
-        cout << "¬‚Â‰ËÚÂ ÍÓÏ‡Ì‰Û ('+', '-', '=' ËÎË 'ı'): ";
+        cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–º–∞–Ω–¥—É ('+', '-', '=' –∏–ª–∏ '—Ö'): ";
         cin >> operation;
-
-        if (operation == '+') user.add_count();
-=======
-        std::cout << "–í–≤–µ–¥–∏—Ç–µ –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞: ";
-        std::cin >> count;
-        std::cout << "\n";
-    }
-        Counter user{ count };
-    do
-    {
-        std::cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–º–∞–Ω–¥—É ('+', '-', '=' –∏–ª–∏ '—Ö'): ";
-        std::cin >> operation;
 
         if (operation == '+') user.add_count();
 
@@ -88,15 +60,8 @@ int main()
         if (operation == '=') user.print_count();
 
         if (operation == '—Ö') user.close_prog();
->>>>>>> c5bfa431c558983083caa5f05bddbcf586a380f7
 
-        if (operation == '-') user.min_count();
-
-        if (operation == '=') user.print_count();
-
-        if (operation == 'ı') user.close_prog();
-
-    } while (operation != 'ı');
+    } while (operation != '—Ö');
 
     return 0;
 }
