@@ -2,54 +2,64 @@
 #include <string>
 #include<Windows.h>
 
+using namespace std;
+
 class Counter
 {
 private:
-    int count = 1;
+    int count{ 1 };
 
 public:
 
-    void user_count() { std::cin >> count;}
-    void add_count() { count += 1; std::cout << count << "\n";}
-    void min_count() { count -= 1; std::cout << count << "\n";}
-    void print_count() { std::cout << count << "\n"; }
-    int close_prog() { std::cout << "–î–æ —Å–≤–∏–¥–∞–Ω–∏—è! \n"; return 0;}
+    Counter() {}
+
+    Counter(int i)
+    {
+        count = i;
+    }
+
+    void add_count() { count += 1; cout << "\n"; }
+    void min_count() { count -= 1; cout << "\n"; }
+    void print_count() { cout << count << "\n\n"; }
+    int close_prog() { cout << "ƒÓ Ò‚Ë‰‡ÌËˇ! \n"; return 0; }
 };
 
-int main(int argc, char** argv) 
+int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
     std::string user_choice;
     char operation;
+    int count{ 1 };
 
     Counter counter;
 
-    std::cout << "–í—ã —Ö–æ—Ç–∏—Ç–µ —É–∫–∞–∑–∞—Ç—å –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞? –í–≤–µ–¥–∏—Ç–µ –¥–∞ –∏–ª–∏ –Ω–µ—Ç: \n";
+
+    std::cout << "¬˚ ıÓÚËÚÂ ÛÍ‡Á‡Ú¸ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜∏Ú˜ËÍ‡? ¬‚Â‰ËÚÂ ‰‡ ËÎË ÌÂÚ: \n";
     std::cin >> user_choice;
 
-    if (user_choice == "–¥–∞")
+    if (user_choice == "‰‡")
     {
-        std::cout << "–í–≤–µ–¥–∏—Ç–µ –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞: ";
-        counter.user_count();
-        std::cout << "\n";
+        cout << "¬‚Â‰ËÚÂ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜∏Ú˜ËÍ‡: ";
+        cin >> count;
+        cout << "\n";
     }
-
+    Counter user{ count };
     do
     {
-        std::cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–º–∞–Ω–¥—É ('+', '-', '=' –∏–ª–∏ 'x'): ";
-        std::cin >> operation;
+        cout << "¬‚Â‰ËÚÂ ÍÓÏ‡Ì‰Û ('+', '-', '=' ËÎË 'ı'): ";
+        cin >> operation;
 
-        if (operation == '+') counter.add_count();
-        
-        if (operation == '-') counter.min_count();
-        
-        if (operation == '=') counter.print_count();
-        
-        if (operation == '—Ö') counter.close_prog(); 
+        if (operation == '+') user.add_count();
 
-    } while (operation != '—Ö');
+        if (operation == '-') user.min_count();
+
+        if (operation == '=') user.print_count();
+
+        if (operation == 'ı') user.close_prog();
+
+    } while (operation != 'ı');
 
     return 0;
 }

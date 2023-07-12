@@ -1,112 +1,88 @@
 #include<iostream>
+#include<Windows.h>
+
 
 using namespace std;
 
 class Calculator 
 {
-	public:
+	private:
 		double num1;
 		double num2;
 
-		double add(double num1, double num2) 
-		{
-			double result = 0;
-			result = num1 + num2;
-			return result;
+	public:
+		double add() {
+			return num1 + num2;
 		};
-		double multiply(double num1, double num2)
-		{
-			double result = 0;
-			result = num1 * num2;
-			return result;
+		double multiply(){
+			return num1 * num2;
 		};
-		double subtract_1_2(double num1, double num2)
-		{
-			double result = 0;
-			result = num1 - num2;
-			return result;
+		double subtract_1_2(){
+			return num1 - num2;
 		};
-		double subtract_2_1(double num1, double num2)
-		{
-			double result = 0;
-			result = num2 - num1;
-			return result;
-		};
-		double divide_1_2(double num1, double num2)
-		{
-			double result = 0;;
-			result = num1 / num2;
-			return result;
-		};
-		double divide_2_1(double num1, double num2)
-		{
-			double result = 0;
-			result = num2 / num1;
-			return result;
-		};
+		double subtract_2_1(){
+			return num2 - num1;
+		}
+		double divide_1_2(){
+			return num1 / num2;
+		}
+		double divide_2_1(){
+			return num2 / num1; 
+		}
 		bool set_num1(double num1)
 		{
-			if (!num1)
-			{
-				cout << "Неверный ввод!" << "\n";
-				cout << "Введите num1 : ";
-				cin >> num1;
-				cout << "\n";
-			}
-			else this ->num1 = num1;
+			cout << "Введите num1 : ";
+			cin >> num1;
+			cout << "\n";
 
-			return 1;
+			if (num1 == 0) {
+				set_num1(num1);
+			}else {
+				this->num1 = num1;
+				return true;
+			}
 		};
 		bool set_num2(double num2)
-		{
-			if (!num2)
-			{
-				cout << "Неверный ввод!" << "\n";
-				cout << "Введите num2 : ";
-				cin >> num2;
-				cout << "\n";
-			}
-			else this->num2 = num2;
+		{	
+			cout << "Введите num2 : ";
+			cin >> num2;
+			cout << "\n";
 
-			return 1;
+			if (num2 == 0){
+				set_num2(num2);
+			}else{
+				this->num2 = num2;
+				return true;
+			}
 		};
 };
 
 int main()
 {	
-	setlocale(LC_ALL, "Russian");
-	double num1 = 0, num2 = 0, result = 0;
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	double num1 = 0, num2 = 0;
+
 	Calculator operations;
 	
 	do
 	{
-		cout << "Введите num1 : ";
-		cin >> num1;
-		cout << "\n";
-		result = operations.set_num1(num1);
+		operations.set_num1(num1);
 
-		cout << "Введите num2 : ";
-		cin >> num2;
-		cout << "\n";
-		result = operations.set_num2(num2);
+		operations.set_num2(num2);
 
-		result = operations.add(num1, num2);
-		cout << "num1 + num2 = " << result << "\n";
+		cout << "num1 + num2 = " << operations.add() << "\n";
 
-		result = operations.subtract_1_2(num1, num2);
-		cout << "num1 - num2 = " << result << "\n";
+		cout << "num1 - num2 = " << operations.subtract_1_2() << "\n";
 
-		result = operations.subtract_2_1(num1, num2);
-		cout << "num2 - num1 = " << result << "\n";
+		cout << "num2 - num1 = " << operations.subtract_2_1() << "\n";
 
-		result = operations.multiply(num1, num2);
-		cout << "num1 * num2 = " << result << "\n";
+		cout << "num1 * num2 = " << operations.multiply() << "\n";
 		
-		result = operations.divide_1_2(num1, num2);
-		cout << "num1 / num2 = " << result << "\n";
+		cout << "num1 / num2 = " << operations.divide_1_2() << "\n";
 		
-		result = operations.divide_2_1(num1,num2);
-		cout << "num2 / num1 = " << result << "\n";
+		cout << "num2 / num1 = " << operations.divide_2_1() << "\n";
 
 	}while (true);
 
