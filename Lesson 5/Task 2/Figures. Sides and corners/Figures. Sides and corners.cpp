@@ -38,7 +38,7 @@ class Triangle : public Figure
 public:
 	Triangle(int TrainSideA, int TrainSideB, int TrainSideC, int TrainAngleA, int TrainAngleB, int TrainAngleC)
 	{
-		FigureName = "Треугольник";
+		FigureName = "РўСЂРµСѓРіРѕР»СЊРЅРёРє";
 		sideA = TrainSideA;
 		sideB = TrainSideB;
 		sideC = TrainSideC;
@@ -54,7 +54,7 @@ public:
 	rightTriangle(int TrainSideA, int TrainSideB, int TrainSideC, int TrainAngleA, int TrainAngleB)
 		:Triangle(TrainSideA, TrainSideB, TrainSideC, TrainAngleA, TrainAngleB, 90)
 	{
-		Triangle::FigureName = "Прямоугольный треугольник";
+		Triangle::FigureName = "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 	};
 };
 
@@ -64,7 +64,7 @@ public:
 	isoscelesTriangle(int TrainSideA, int TrainSideB, int TrainAngleA, int TrainAngleB)
 		: Triangle(TrainSideA, TrainSideB, TrainSideA, TrainAngleA, TrainAngleB, TrainAngleA)
 	{
-		Triangle::FigureName = "Равнобедренный треугольник";
+		Triangle::FigureName = "Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 	};
 };
 
@@ -74,7 +74,7 @@ public:
 	equilateralTriangle(int TrainSideA)
 		: Triangle(TrainSideA, TrainSideA, TrainSideA, 60, 60, 60)
 	{
-		Triangle::FigureName = "Равносторонний треугольник";
+		Triangle::FigureName = "Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 	};
 };
 
@@ -84,7 +84,7 @@ class Quadrilateral : public Figure
 public:
 	Quadrilateral(int QuadrSideA, int QuadrSideB, int QuadrSideC, int QuadrSideD, int QuadrAngleA, int QuadrAngleB, int QuadrAngleC, int QuadrAngleD)
 	{
-		FigureName = "Четырехугольник";
+		FigureName = "Р§РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє";
 
 		QuadrSign = true;
 
@@ -106,7 +106,7 @@ public:
 	Rectangle(int QuadrSideA, int QuadrSideB)
 		: Quadrilateral(QuadrSideA, QuadrSideB, QuadrSideA, QuadrSideB, 90, 90, 90, 90)
 	{
-		Quadrilateral::FigureName = "Прямоугольник";
+		Quadrilateral::FigureName = "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє";
 	}
 };
 
@@ -116,7 +116,7 @@ public:
 	Square(int QuadrSideA)
 		: Quadrilateral(QuadrSideA, QuadrSideA, QuadrSideA, QuadrSideA, 90, 90, 90, 90)
 	{
-		Quadrilateral::FigureName = "Квадрат";
+		Quadrilateral::FigureName = "РљРІР°РґСЂР°С‚";
 	}
 };
 
@@ -126,7 +126,7 @@ public:
 	Parallelogram(int QuadrSideA, int QuadrSideB, int QuadrAngleA, int QuadrAngleB)
 		: Quadrilateral(QuadrSideA, QuadrSideB, QuadrSideA, QuadrSideB, QuadrAngleA, QuadrAngleB, QuadrAngleA, QuadrAngleB)
 	{
-		Quadrilateral::FigureName = "Параллелограмм";
+		Quadrilateral::FigureName = "РџР°СЂР°Р»Р»РµР»РѕРіСЂР°РјРј";
 	}
 };
 
@@ -136,21 +136,21 @@ public:
 	Rhomb(int QuadrSideA, int QuadrAngleA, int QuadrAngleB)
 		: Quadrilateral(QuadrSideA, QuadrSideA, QuadrSideA, QuadrSideA, QuadrAngleA, QuadrAngleB, QuadrAngleA, QuadrAngleB)
 	{
-		Quadrilateral::FigureName = "Ромб";
+		Quadrilateral::FigureName = "Р РѕРјР±";
 	}
 };
 
 void print(Figure& f)
 {
 	cout << "\n" << f.get_figure_name()
-		<< ": \n" << "Стороны: a = " << f.get_side_A() << ", b = " << f.get_side_B() << ", с = " << f.get_side_C();
+		<< ": \n" << "РЎС‚РѕСЂРѕРЅС‹: a = " << f.get_side_A() << ", b = " << f.get_side_B() << ", СЃ = " << f.get_side_C();
 
-	// проверка на четырехугольник по признаку
+	// РїСЂРѕРІРµСЂРєР° РЅР° С‡РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє РїРѕ РїСЂРёР·РЅР°РєСѓ
 	if (f.get_QuadrSign()){
 		cout << ", d = " << f.get_side_D() << "\n";
 	}else{ cout << "\n"; }
 
-	cout << "Углы: А = " << f.get_angle_A() << ", В = " << f.get_angle_B() << ", С = " << f.get_angle_C();
+	cout << "РЈРіР»С‹: Рђ = " << f.get_angle_A() << ", Р’ = " << f.get_angle_B() << ", РЎ = " << f.get_angle_C();
 
 	if (f.get_QuadrSign()){
 		cout << ", D = " << f.get_angle_D() << "\n"; 
