@@ -31,7 +31,11 @@ class Calculator
 		}
 		bool set_num1(double num1)
 		{
+<<<<<<< HEAD
 			cout << "Введите num1 : ";
+=======
+			cout << "Р’РІРµРґРёС‚Рµ num1 : ";
+>>>>>>> c5bfa431c558983083caa5f05bddbcf586a380f7
 			cin >> num1;
 			cout << "\n";
 
@@ -44,7 +48,11 @@ class Calculator
 		};
 		bool set_num2(double num2)
 		{	
+<<<<<<< HEAD
 			cout << "Введите num2 : ";
+=======
+			cout << "Р’РІРµРґРёС‚Рµ num2 : ";
+>>>>>>> c5bfa431c558983083caa5f05bddbcf586a380f7
 			cin >> num2;
 			cout << "\n";
 

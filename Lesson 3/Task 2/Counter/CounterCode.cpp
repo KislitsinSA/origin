@@ -2,7 +2,11 @@
 #include <string>
 #include<Windows.h>
 
+<<<<<<< HEAD
 using namespace std;
+=======
+
+>>>>>>> c5bfa431c558983083caa5f05bddbcf586a380f7
 
 class Counter
 {
@@ -13,6 +17,7 @@ public:
 
     Counter() {}
 
+<<<<<<< HEAD
     Counter(int i)
     {
         count = i;
@@ -22,6 +27,17 @@ public:
     void min_count() { count -= 1; cout << "\n"; }
     void print_count() { cout << count << "\n\n"; }
     int close_prog() { cout << "Äî ñâèäàíèÿ! \n"; return 0; }
+=======
+    Counter(int i) 
+    {
+       count = i;
+    }
+
+    void add_count() { count += 1; std::cout << count << "\n"; }
+    void min_count() { count -= 1; std::cout << count << "\n"; }
+    void print_count() { std::cout << count << "\n"; }
+    int close_prog() { std::cout << "Ð”Ð¾ ÑÐ²Ð¸Ð´Ð°Ð½Ð¸Ñ! \n"; return 0; }
+>>>>>>> c5bfa431c558983083caa5f05bddbcf586a380f7
 };
 
 int main()
@@ -34,6 +50,7 @@ int main()
     int count{ 1 };
 
     Counter counter;
+    
 
 
     std::cout << "Âû õîòèòå óêàçàòü íà÷àëüíîå çíà÷åíèå ñ÷¸ò÷èêà? Ââåäèòå äà èëè íåò: \n";
@@ -41,6 +58,7 @@ int main()
 
     if (user_choice == "äà")
     {
+<<<<<<< HEAD
         cout << "Ââåäèòå íà÷àëüíîå çíà÷åíèå ñ÷¸ò÷èêà: ";
         cin >> count;
         cout << "\n";
@@ -52,6 +70,25 @@ int main()
         cin >> operation;
 
         if (operation == '+') user.add_count();
+=======
+        std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ ÑÑ‡Ñ‘Ñ‚Ñ‡Ð¸ÐºÐ°: ";
+        std::cin >> count;
+        std::cout << "\n";
+    }
+        Counter user{ count };
+    do
+    {
+        std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñƒ ('+', '-', '=' Ð¸Ð»Ð¸ 'Ñ…'): ";
+        std::cin >> operation;
+
+        if (operation == '+') user.add_count();
+
+        if (operation == '-') user.min_count();
+
+        if (operation == '=') user.print_count();
+
+        if (operation == 'Ñ…') user.close_prog();
+>>>>>>> c5bfa431c558983083caa5f05bddbcf586a380f7
 
         if (operation == '-') user.min_count();
 

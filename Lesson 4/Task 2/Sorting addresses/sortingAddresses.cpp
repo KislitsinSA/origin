@@ -24,7 +24,7 @@ public:
         int flatNumber = flatNumberConstr;
     }
 
-    // метод объединения полей в строку адреса
+    // РјРµС‚РѕРґ РѕР±СЉРµРґРёРЅРµРЅРёСЏ РїРѕР»РµР№ РІ СЃС‚СЂРѕРєСѓ Р°РґСЂРµСЃР°
     string get_output_address(string city, string street, int houseNumber, int flatNumber)
     {
         string output_address = city + ", " + street + ", " + to_string(houseNumber) + ", " + to_string(flatNumber) + "\n";
@@ -49,12 +49,12 @@ int main() {
 
     if (!fileIn.is_open())
     {
-        cout << "Файл не открыт или не найден";
+        cout << "Р¤Р°Р№Р» РЅРµ РѕС‚РєСЂС‹С‚ РёР»Рё РЅРµ РЅР°Р№РґРµРЅ";
         return 0;
     }
-    fileIn >> numberOfAddresses; // запись в переменную кол-ва адресов, указанных в файле in.txt
+    fileIn >> numberOfAddresses; // Р·Р°РїРёСЃСЊ РІ РїРµСЂРµРјРµРЅРЅСѓСЋ РєРѕР»-РІР° Р°РґСЂРµСЃРѕРІ, СѓРєР°Р·Р°РЅРЅС‹С… РІ С„Р°Р№Р»Рµ in.txt
 
-    // Создание динамического массива и наполнение его адресами
+    // РЎРѕР·РґР°РЅРёРµ РґРёРЅР°РјРёС‡РµСЃРєРѕРіРѕ РјР°СЃСЃРёРІР° Рё РЅР°РїРѕР»РЅРµРЅРёРµ РµРіРѕ Р°РґСЂРµСЃР°РјРё
     string* AddArr;
     AddArr = new string[numberOfAddresses];
 
@@ -65,8 +65,13 @@ int main() {
         AddArr[i] = addresses.get_output_address(cityConstr, streetConstr, houseNumberConstr, flatNumberConstr);
     };
    
+<<<<<<< HEAD
     // сортировка адресов в массиве по алфавиту
     for (int i = 0; i < numberOfAddresses - 1; i++)
+=======
+    // СЃРѕСЂС‚РёСЂРѕРІРєР° Р°РґСЂРµСЃРѕРІ РІ РјР°СЃСЃРёРІРµ РїРѕ Р°Р»С„Р°РІРёС‚Сѓ
+    for (int i = 0; i < numberOfAddresses - i; i++)
+>>>>>>> c5bfa431c558983083caa5f05bddbcf586a380f7
     {
         for (int j = 0; j < numberOfAddresses - 1 - i; j++)
         {
@@ -79,11 +84,11 @@ int main() {
         }
     }
 
-    // печать адресов в файл out.txt
+    // РїРµС‡Р°С‚СЊ Р°РґСЂРµСЃРѕРІ РІ С„Р°Р№Р» out.txt
     ofstream fileOut("out.txt");
     if (!fileOut.is_open())
     {
-        cout << "Файл не открыт или не найден";
+        cout << "Р¤Р°Р№Р» РЅРµ РѕС‚РєСЂС‹С‚ РёР»Рё РЅРµ РЅР°Р№РґРµРЅ";
         return 0;
     }
     fileOut << numberOfAddresses << "\n";
