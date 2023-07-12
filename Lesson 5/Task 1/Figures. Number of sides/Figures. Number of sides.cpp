@@ -37,10 +37,10 @@ int main()
 	Triangle Triangle;
 	Quadrangle Quadrangle;
 
-	cout << "Êîëè÷åñòâî ñòîðîí :\n"
-		<< "Ôèãóðà: " << Figure.get_sides_count() << "\n"
-		<< "Òðåóãîëüíèê : " << Triangle.get_sides_count() << "\n"
-		<< "×åòûð¸õóãîëüíèê : " << Quadrangle.get_sides_count() << "\n";
+	cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ð¾Ñ€Ð¾Ð½ :\n"
+		<< "Ð¤Ð¸Ð³ÑƒÑ€Ð°: " << Figure.get_sides_count() << "\n"
+		<< "Ð¢Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº : " << Triangle.get_sides_count() << "\n"
+		<< "Ð§ÐµÑ‚Ñ‹Ñ€Ñ‘Ñ…ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº : " << Quadrangle.get_sides_count() << "\n";
 
 	return 0;
 };
