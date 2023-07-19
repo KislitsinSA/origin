@@ -21,7 +21,11 @@ public:
     void add_count() { count += 1; cout << "\n"; }
     void min_count() { count -= 1; cout << "\n"; }
     void print_count() { cout << count << "\n\n"; }
+<<<<<<< HEAD
     int close_prog() { cout << "ƒÓ Ò‚Ë‰‡ÌËˇ! \n"; return 0; }
+=======
+    int close_prog() { cout << "–î–æ —Å–≤–∏–¥–∞–Ω–∏—è! \n"; return 0; }
+>>>>>>> 6ddf20b7d9b451e864cc18889ff8826e0d392dff
 
 };
 
@@ -38,30 +42,37 @@ int main()
     
 
 
-    std::cout << "¬˚ ıÓÚËÚÂ ÛÍ‡Á‡Ú¸ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜∏Ú˜ËÍ‡? ¬‚Â‰ËÚÂ ‰‡ ËÎË ÌÂÚ: \n";
+    std::cout << "–í—ã —Ö–æ—Ç–∏—Ç–µ —É–∫–∞–∑–∞—Ç—å –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞? –í–≤–µ–¥–∏—Ç–µ –¥–∞ –∏–ª–∏ –Ω–µ—Ç: \n";
     std::cin >> user_choice;
 
-    if (user_choice == "‰‡")
+    if (user_choice == "–¥–∞")
     {
+<<<<<<< HEAD
         cout << "¬‚Â‰ËÚÂ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜∏Ú˜ËÍ‡: ";
+=======
+        cout << "–í–≤–µ–¥–∏—Ç–µ –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞: ";
+>>>>>>> 6ddf20b7d9b451e864cc18889ff8826e0d392dff
         cin >> count;
         cout << "\n";
     }
     Counter user{ count };
     do
     {
-        cout << "¬‚Â‰ËÚÂ ÍÓÏ‡Ì‰Û ('+', '-', '=' ËÎË 'ı'): ";
+        cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–º–∞–Ω–¥—É ('+', '-', '=' –∏–ª–∏ '—Ö'): ";
         cin >> operation;
 
         if (operation == '+') user.add_count();
+<<<<<<< HEAD
+=======
 
         if (operation == '-') user.min_count();
 
         if (operation == '=') user.print_count();
 
-        if (operation == 'ı') user.close_prog();
+        if (operation == '—Ö') user.close_prog();
+>>>>>>> 6ddf20b7d9b451e864cc18889ff8826e0d392dff
 
-    } while (operation != 'ı');
+    } while (operation != '—Ö');
 
     return 0;
 }
