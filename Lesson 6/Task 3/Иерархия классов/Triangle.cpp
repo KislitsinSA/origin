@@ -5,7 +5,7 @@
 
 	Triangle::Triangle(int TrainSideA, int TrainSideB, int TrainSideC, int TrainAngleA, int TrainAngleB, int TrainAngleC)
 	{
-		FigureName = "Треугольник";
+		FigureName = "РўСЂРµСѓРіРѕР»СЊРЅРёРє";
 		sideA = TrainSideA;
 		sideB = TrainSideB;
 		sideC = TrainSideC;
