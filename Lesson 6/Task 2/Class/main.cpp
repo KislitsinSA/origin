@@ -14,12 +14,12 @@ int main()
     char operation;
     int count{ 1 };
 
-    std::cout << "¬˚ ıÓÚËÚÂ ÛÍ‡Á‡Ú¸ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜∏Ú˜ËÍ‡? ¬‚Â‰ËÚÂ ‰‡ ËÎË ÌÂÚ: \n";
+    std::cout << "–í—ã —Ö–æ—Ç–∏—Ç–µ —É–∫–∞–∑–∞—Ç—å –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞? –í–≤–µ–¥–∏—Ç–µ –¥–∞ –∏–ª–∏ –Ω–µ—Ç: \n";
     std::cin >> user_choice;
 
-    if (user_choice == "‰‡")
+    if (user_choice == "–¥–∞")
     {
-        cout << "¬‚Â‰ËÚÂ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜∏Ú˜ËÍ‡: ";
+        cout << "–í–≤–µ–¥–∏—Ç–µ –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞: ";
         cin >> count;
         cout << "\n";
     } 
@@ -28,7 +28,7 @@ int main()
 
     do
     {
-        cout << "¬‚Â‰ËÚÂ ÍÓÏ‡Ì‰Û ('+', '-', '=' ËÎË 'ı'): ";
+        cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–º–∞–Ω–¥—É ('+', '-', '=' –∏–ª–∏ '—Ö'): ";
         cin >> operation;
 
         if (operation == '+') user.add_count();
@@ -37,9 +37,9 @@ int main()
 
         if (operation == '=') user.print_count();
 
-        if (operation == 'ı') user.close_prog();
+        if (operation == '—Ö') user.close_prog();
 
-    } while (operation != 'ı');
+    } while (operation != '—Ö');
 
     return 0;
 }
