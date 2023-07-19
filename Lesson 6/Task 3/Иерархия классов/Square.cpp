@@ -3,5 +3,5 @@
 Square::Square(int QuadrSideA)
 		: Quadrilateral(QuadrSideA, QuadrSideA, QuadrSideA, QuadrSideA, 90, 90, 90, 90)
 	{
-		Quadrilateral::FigureName = "Квадрат";
+		Quadrilateral::FigureName = "РљРІР°РґСЂР°С‚";
 	}
