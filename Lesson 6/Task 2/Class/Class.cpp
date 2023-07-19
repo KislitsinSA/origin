@@ -8,4 +8,4 @@ Counter::Counter(int count) {count_auto = count;}
 void Counter::add_count() { count_auto += 1; cout << "\n"; }
 void Counter::min_count() { count_auto -= 1; cout << "\n"; }
 void Counter::print_count() { cout << count_auto << "\n\n"; }
-int Counter::close_prog() { cout << "Äî ñâèäàíèÿ! \n"; return 0; }
+int Counter::close_prog() { cout << "Ğ”Ğ¾ ÑĞ²Ğ¸Ğ´Ğ°Ğ½Ğ¸Ñ! \n"; return 0; }
