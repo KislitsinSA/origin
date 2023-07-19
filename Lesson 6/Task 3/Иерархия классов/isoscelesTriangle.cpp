@@ -3,5 +3,5 @@
 isoscelesTriangle::isoscelesTriangle(int TrainSideA, int TrainSideB, int TrainAngleA, int TrainAngleB)
 		: Triangle(TrainSideA, TrainSideB, TrainSideA, TrainAngleA, TrainAngleB, TrainAngleA)
 	{
-		Triangle::FigureName = "Равнобедренный треугольник";
+		Triangle::FigureName = "Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 	};
