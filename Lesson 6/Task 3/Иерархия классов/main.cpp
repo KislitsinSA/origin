@@ -18,15 +18,15 @@ using namespace std;
 void print(Figure& f)
 {
 	cout << "\n" << f.get_figure_name()
-		<< ": \n" << "Ñòîðîíû: a = " << f.get_side_A() << ", b = " << f.get_side_B() << ", ñ = " << f.get_side_C();
+		<< ": \n" << "Ð¡Ñ‚Ð¾Ñ€Ð¾Ð½Ñ‹: a = " << f.get_side_A() << ", b = " << f.get_side_B() << ", Ñ = " << f.get_side_C();
 
-	// ïðîâåðêà íà ÷åòûðåõóãîëüíèê ïî ïðèçíàêó
+	// Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð½Ð° Ñ‡ÐµÑ‚Ñ‹Ñ€ÐµÑ…ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº Ð¿Ð¾ Ð¿Ñ€Ð¸Ð·Ð½Ð°ÐºÑƒ
 	if (f.get_QuadrSign()) {
 		cout << ", d = " << f.get_side_D() << "\n";
 	}
 	else { cout << "\n"; }
 
-	cout << "Óãëû: À = " << f.get_angle_A() << ", Â = " << f.get_angle_B() << ", Ñ = " << f.get_angle_C();
+	cout << "Ð£Ð³Ð»Ñ‹: Ð = " << f.get_angle_A() << ", Ð’ = " << f.get_angle_B() << ", Ð¡ = " << f.get_angle_C();
 
 	if (f.get_QuadrSign()) {
 		cout << ", D = " << f.get_angle_D() << "\n";
