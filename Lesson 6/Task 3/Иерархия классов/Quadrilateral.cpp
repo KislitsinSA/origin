@@ -3,7 +3,7 @@
 
 Quadrilateral::Quadrilateral(int QuadrSideA, int QuadrSideB, int QuadrSideC, int QuadrSideD, int QuadrAngleA, int QuadrAngleB, int QuadrAngleC, int QuadrAngleD)
 	{
-		FigureName = "Четырехугольник";
+		FigureName = "Р§РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє";
 
 		QuadrSign = true;
 
