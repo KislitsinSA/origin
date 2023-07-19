@@ -4,6 +4,6 @@
 Parallelogram::Parallelogram(int QuadrSideA, int QuadrSideB, int QuadrAngleA, int QuadrAngleB)
 		: Quadrilateral(QuadrSideA, QuadrSideB, QuadrSideA, QuadrSideB, QuadrAngleA, QuadrAngleB, QuadrAngleA, QuadrAngleB)
 	{
-		Quadrilateral::FigureName = "Параллелограмм";
+		Quadrilateral::FigureName = "РџР°СЂР°Р»Р»РµР»РѕРіСЂР°РјРј";
 	}
 
