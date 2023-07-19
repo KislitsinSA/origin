@@ -1,7 +1,7 @@
 #include<iostream>
 #include"main.h"
 
-using namespace std;
+ using namespace std;
 
 int main ()
 {
@@ -12,14 +12,14 @@ int main ()
 	auto num2{ 0 };
 	int choice{ 0 };
 
-	cout << "\n Ââåäèòå ïåðâîå ÷èñëî : ";
+	cout << "\n Ã‚Ã¢ÄºÃ¤ÄÅˆÄº ÄÄºÄ‘Ã¢Ã®Äº Ã·ÄÅ„Ã«Ã® : ";
 	cin >> num1;
-	cout << "\n Ââåäèòå âòîðîå ÷èñëî : ";
+	cout << "\n Ã‚Ã¢ÄºÃ¤ÄÅˆÄº Ã¢ÅˆÃ®Ä‘Ã®Äº Ã·ÄÅ„Ã«Ã® : ";
 	cin >> num2;
 
 	do
 	{
-		cout << "\n Âûáåðèòå îïåðàöèþ(1 - ñëîæåíèå, 2 âû÷èòàíèå, 3 - óìíîæåíèå, 4 - äåëåíèå, 5 - âîçâåäåíèå â ñòåïåíü) : ";
+		cout << "\n Ã‚Å±Ã¡ÄºÄ‘ÄÅˆÄº Ã®ÄÄºÄ‘Å•Ã¶ÄÅ£(1 - Å„Ã«Ã®Ä‡ÄºÃ­ÄÄº, 2 Ã¢Å±Ã·ÄÅˆÅ•Ã­ÄÄº, 3 - Ã³Ä›Ã­Ã®Ä‡ÄºÃ­ÄÄº, 4 - Ã¤ÄºÃ«ÄºÃ­ÄÄº, 5 - Ã¢Ã®Ã§Ã¢ÄºÃ¤ÄºÃ­ÄÄº Ã¢ Å„ÅˆÄºÄÄºÃ­Ã¼) : ";
 		cin >> choice;
 
 		switch (choice)
@@ -32,7 +32,7 @@ int main ()
 			break;
 		case 4: cout << num1 << " / " << num2 << " = " << divide(num1, num2);
 			break;
-		case 5: cout << num1 << "  â ñòåïåíè " << num2 << " = " << exponentiation(num1, num2);
+		case 5: cout << num1 << "  Ã¢ Å„ÅˆÄºÄÄºÃ­Ä " << num2 << " = " << exponentiation(num1, num2);
 			break;
 		}
 
