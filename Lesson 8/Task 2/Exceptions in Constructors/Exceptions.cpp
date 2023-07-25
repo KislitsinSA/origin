@@ -1,4 +1,4 @@
-
+/*
 class Exceptions : public std::exception
 {
 public:
@@ -15,4 +15,4 @@ public:
 		}
 	}
 
-};
+};*/

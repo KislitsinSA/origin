@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include"Figure.h"
+/*
 
 class Exceptions : public std::exception
 {
@@ -12,4 +13,4 @@ int divide(float dividend, float divisor)
 	if (divisor == 0) throw DivisionByZeroException();
 	return dividend / divisor;
 }
-};
+}; */

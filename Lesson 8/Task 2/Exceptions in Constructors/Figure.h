@@ -4,8 +4,7 @@
 class Figure{
 
 protected:
-	string FigureName = "Фигура";
-	int sides{ 0 }; // число сторон
+	std::string FigureName;
 	int sideA{ 0 };
 	int sideB{ 0 };
 	int sideC{ 0 };
