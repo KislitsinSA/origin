@@ -1,0 +1,3 @@
+C:/Users/user/Desktop/origin/Lesson 10/Task 2/out/build/x64-Debug/CMakeFiles/Exceptions_in_Constructors_cmake.dir
+C:/Users/user/Desktop/origin/Lesson 10/Task 2/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/origin/Lesson 10/Task 2/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

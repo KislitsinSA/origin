@@ -1,0 +1,15 @@
+# ninja log v5
+41	2010	7120677364212012	CMakeFiles/Exceptions_in_Constructors_cmake.dir/Figure.cpp.obj	658b866610be4b22
+30	2085	7120677364362011	CMakeFiles/Exceptions_in_Constructors_cmake.dir/equilateralTriangle.cpp.obj	32c6480a3bac2677
+56	2108	7120677364322014	CMakeFiles/Exceptions_in_Constructors_cmake.dir/Parallelogram.cpp.obj	6e53d20938010890
+64	2116	7120677364432046	CMakeFiles/Exceptions_in_Constructors_cmake.dir/Quadrilateral.cpp.obj	93d5668245021f1c
+48	2144	7120677364392019	CMakeFiles/Exceptions_in_Constructors_cmake.dir/isoscelesTriangle.cpp.obj	f91ad49a1030c95d
+22	2614	7120677369148207	CMakeFiles/Exceptions_in_Constructors_cmake.dir/main.cpp.obj	72db0219e626b735
+2108	3729	7120677381461613	CMakeFiles/Exceptions_in_Constructors_cmake.dir/rightTriangle.cpp.obj	d9f8d641193f1989
+2068	3774	7120677382196817	CMakeFiles/Exceptions_in_Constructors_cmake.dir/Rectangle.cpp.obj	f9881846177b263
+2148	3823	7120677382722009	CMakeFiles/Exceptions_in_Constructors_cmake.dir/Triangle.cpp.obj	3dda006c5343e2f
+2117	3823	7120677382722009	CMakeFiles/Exceptions_in_Constructors_cmake.dir/Square.cpp.obj	519f5b9a45356afc
+2085	3829	7120677382822007	CMakeFiles/Exceptions_in_Constructors_cmake.dir/Rhomb.cpp.obj	5d9a450105d019f3
+3830	4377	7120677388076203	Exceptions_in_Constructors_cmake.exe	9f67bef80a251eaa
+7	734	7120679617044342	CMakeFiles/Exceptions_in_Constructors_cmake.dir/equilateralTriangle.cpp.obj	32c6480a3bac2677
+735	1065	7120679619797211	Exceptions_in_Constructors_cmake.exe	9f67bef80a251eaa

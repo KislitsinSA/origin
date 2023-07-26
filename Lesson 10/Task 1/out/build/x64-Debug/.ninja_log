@@ -1,0 +1,6 @@
+# ninja log v5
+11	758	7120661231532952	build.ninja	53d9f46d3ed18279
+10	1189	7120640571295755	CMakeFiles/first_cmake.dir/my_first_cmake_project.cpp.obj	e493696c5bfb39d6
+1190	1921	7120640578600735	first_cmake.exe	195228a7fbecc848
+12	1819	7120661307786202	CMakeFiles/first_cmake.dir/my_first_cmake_project.cpp.obj	c767bc87fbd3fd1c
+1820	2133	7120661310411738	first_cmake.exe	195228a7fbecc848
