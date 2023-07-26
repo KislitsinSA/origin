@@ -8,7 +8,7 @@ private:
 	int num{ 0 };
 	int denom{ 0 };
 
-	//Определение общего делителя дробей
+	//РћРїСЂРµРґРµР»РµРЅРёРµ РѕР±С‰РµРіРѕ РґРµР»РёС‚РµР»СЏ РґСЂРѕР±РµР№
 
 	int gcd_foo(int num, int denom) 
 	{
@@ -32,7 +32,7 @@ public:
 		denom = FracDenom;
 	}
 
-	//Сложение
+	//РЎР»РѕР¶РµРЅРёРµ
 
 	Fraction operator+ (const Fraction& f2) 
 	{
@@ -46,7 +46,7 @@ public:
 		return temp;
 	}
 
-	//Вычитание
+	//Р’С‹С‡РёС‚Р°РЅРёРµ
 
 	Fraction operator- (const Fraction& f2) 
 	{
@@ -60,7 +60,7 @@ public:
 		return temp;
 	}
 
-	//Умножение
+	//РЈРјРЅРѕР¶РµРЅРёРµ
 
 	Fraction operator* (const Fraction& f2) 
 	{
@@ -74,7 +74,7 @@ public:
 		return temp;
 	}
 
-	//Деление
+	//Р”РµР»РµРЅРёРµ
 
 	Fraction operator/ (const Fraction& f2) 
 	{
@@ -87,7 +87,7 @@ public:
 		return temp;
 	}
 
-	//Инкремент префиксный
+	//РРЅРєСЂРµРјРµРЅС‚ РїСЂРµС„РёРєСЃРЅС‹Р№
 
 	Fraction operator++ ()  
 	{
@@ -100,7 +100,7 @@ public:
 		return temp;
 	}
 
-	//Декремент постфиксный
+	//Р”РµРєСЂРµРјРµРЅС‚ РїРѕСЃС‚С„РёРєСЃРЅС‹Р№
 
 	Fraction operator-- (int)  
 	{
@@ -135,14 +135,14 @@ int main()
 	int numf2{ 4 };
 	int denomf2{ 5 };
 
-	cout << "Введите числитель дроби 1: ";
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»РёС‚РµР»СЊ РґСЂРѕР±Рё 1: ";
 	cin >> numf1;
-	cout << "Введите знаменатель дроби 1: ";
+	cout << "Р’РІРµРґРёС‚Рµ Р·РЅР°РјРµРЅР°С‚РµР»СЊ РґСЂРѕР±Рё 1: ";
 	cin >> denomf1;
 
-	cout << "Введите числитель дроби 2: ";
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»РёС‚РµР»СЊ РґСЂРѕР±Рё 2: ";
 	cin >> numf2;
-	cout << "Введите знаменатель дроби 2: ";
+	cout << "Р’РІРµРґРёС‚Рµ Р·РЅР°РјРµРЅР°С‚РµР»СЊ РґСЂРѕР±Рё 2: ";
 	cin >> denomf2;
 
 	Fraction f1(numf1, denomf1);
@@ -154,10 +154,10 @@ int main()
 	cout << f1 << " / " << f2 << " = " << f1 / f2 << endl;
 	cout << "++" << f1 << " * " << f2 << " = ";
 	cout << ++f1 * f2 << endl;
-	cout << "Значение дроби 1 = " << f1 << endl;
+	cout << "Р—РЅР°С‡РµРЅРёРµ РґСЂРѕР±Рё 1 = " << f1 << endl;
 	cout << f1 << "--" << " * " << f2 << " = ";
 	cout << f1-- * f2 << endl;
-	cout << "Значение дроби 1 = " << f1 << endl;
+	cout << "Р—РЅР°С‡РµРЅРёРµ РґСЂРѕР±Рё 1 = " << f1 << endl;
 
 	return 0;
 }
